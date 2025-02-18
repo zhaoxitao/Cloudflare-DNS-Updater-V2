@@ -5,7 +5,7 @@ However, the original author seems to have stopped maintenance or updates, and t
 
 This barch was forked and modified form orginal script, fixed bugs to support the leatest Cloudflare API. 
 
-Once the original author accepts to merged this branch, this page will be deleted.
+Once the original author accepts to merged my pull request, this page will be deleted.
 
 
 # Cloudflare DNS Updater
