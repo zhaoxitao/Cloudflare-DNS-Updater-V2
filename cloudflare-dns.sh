@@ -568,9 +568,9 @@ get_ip_icanhazip() {
     local ip
 
     if [[ "$ip_type" == "ipv4" ]]; then
-        ip=$(curl -s -4 icanhazip.com)
+        ip=$(curl -s -4 ipv4.icanhazip.com)
     else
-        ip=$(curl -s -6 icanhazip.com)
+        ip=$(curl -s -6 ipv6.icanhazip.com)
     fi
 
     if [[ -n "$ip" ]] && validate_ip_format "$ip" "$ip_type"; then
@@ -842,9 +842,9 @@ load_yaml() {
     SANITIZE_LOGS=$(remove_quotes "$(yq '.logging.sanitize_logs' "$config_file")")
 
     # Load global settings
-    GLOBAL_IPV4=$(yq '.globals.ipv4 // true' "$config_file")
-    GLOBAL_IPV6=$(yq '.globals.ipv6 // true' "$config_file")
-    GLOBAL_PROXIED=$(yq '.globals.proxied // true' "$config_file")
+    GLOBAL_IPV4=$(yq '.globals.ipv4' "$config_file")
+    GLOBAL_IPV6=$(yq '.globals.ipv6' "$config_file")
+    GLOBAL_PROXIED=$(yq '.globals.proxied' "$config_file")
     GLOBAL_TTL=$(remove_quotes "$(yq '.globals.ttl // 1' "$config_file")")
 
     log_debug "Global settings: IPv4=$GLOBAL_IPV4, IPv6=$GLOBAL_IPV6, Proxied=$GLOBAL_PROXIED, TTL=$GLOBAL_TTL"
