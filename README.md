@@ -1,5 +1,11 @@
 # Fork Description
-[Cloudflare DNS Updater](https://github.com/jmrplens/Cloudflare-DNS-Updater "The orginal script") is an amazing script can support Cloudflare IPv4/IPv6 DDNS update. However, the original author seems to have stopped maintenance or updates, and the script is can not use with leatest Cloudflare API. This barch was forked and modified form orginal script, fixed bugs to support the leatest Cloudflare API. Once the original author accepts to merged this branch, this page will be deleted.
+[Cloudflare DNS Updater](https://github.com/jmrplens/Cloudflare-DNS-Updater "The orginal script") is an amazing script can support Cloudflare IPv4/IPv6 DDNS update. 
+
+However, the original author seems to have stopped maintenance or updates, and the script is can not use with leatest Cloudflare API. 
+
+This barch was forked and modified form orginal script, fixed bugs to support the leatest Cloudflare API. 
+
+Once the original author accepts to merged this branch, this page will be deleted.
 
 
 # Cloudflare DNS Updater
