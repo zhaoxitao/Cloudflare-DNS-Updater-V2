@@ -81,7 +81,7 @@ Cloudflare DNS Updater is a bash script designed to automate the management of D
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/yourusername/cloudflare-dns-updater.git
+   git clone https://github.com/zhaoxitao/Cloudflare-DNS-Updater-V2.git
    ```
 2. Make the script executable:
 
